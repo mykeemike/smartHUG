@@ -42,6 +42,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.DataSetObserver;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -54,6 +55,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -581,8 +583,11 @@ public class NewsActivity extends TabCompatActivity {
 	 * */
 	public static class RSSFragment extends ListFragment {
 		private FeedAdapter adapter=null;
+		//private RSSFeed feedBlank = null;
+		//private Object[] arObj = new 
 		private LayoutInflater inflater; /* Outil de création d'une vue "layout" à partir de sa description XML */
 		private FeedTask ft = null;
+		private ArrayList<Object> lsRss = new ArrayList<Object>();
 		private static class ViewHolder {
 			TextView tvRssTitle, tvRssContent;
 			RSSItem rssItem;
@@ -604,13 +609,16 @@ public class NewsActivity extends TabCompatActivity {
 			loadUrl(f.getUrl());
 			//        	for(Feed f : alFeeds){
 			//        		loadUrl(f.getUrl());
-			//        	}        	
+			//        	}    
+			ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(getActivity(), R.layout.un_rss, lsRss);
 			/** Creating array adapter to set data in listview */
-			//ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(), android.R.layout.simple_list_item_1, rss_ars);
-
+		    //adapter = new FeedAdapter(feedBlank);
+			//setListAdapter(adapter);
+			/** Creating array adapter to set data in listview */
+			
 			/** Setting the array adapter to the listview */
 
-			//setListAdapter(adapter);
+			setListAdapter(adapter);
 
 
 			return super.onCreateView(inflater, container, savedInstanceState);
@@ -706,8 +714,7 @@ public class NewsActivity extends TabCompatActivity {
 
 			FeedAdapter(RSSFeed feed) {
 				super();
-
-				this.feed=feed;
+				this.feed=feed;			
 			}
 
 

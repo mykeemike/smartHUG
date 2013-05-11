@@ -1,2 +1,26 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
 /bin
 /gen
+
+
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+/proguard
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
