@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="noyau.presentation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:vmSafeMode="false" android:persistent="true">
+        <activity
+            android:name="noyau.presentation.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>            
+        </activity><uses-library android:name="com.google.android.maps"/>
+        <activity android:name="hug_communiquent.presentation.NewsActivity" android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:name="sante_geneve.presentation.UrgencesActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="sante_geneve.presentation.DetailsHopital" android:screenOrientation="portrait"></activity>
+        <activity android:name="hug_service.presentation.ConsultationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="noyau.localisation.DetailsConsultationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="hug_service.presentation.DetailsRechercheActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="noyau.presentation.MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="noyau.localisation.DistanceActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="noyau.localisation.FullMapActivity" android:screenOrientation="portrait"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".SettingsFacebookActivity" android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:launchMode="singleInstance" android:screenOrientation="portrait" android:name="SettingsTwitterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mainactivity"
+                    android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <activity android:name="hug_communiquent.traitement.YoutubeVideo"></activity>
+        
+    </application>
+
+</manifest>

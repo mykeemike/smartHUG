@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvRechercheLibre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colBleu"
+        android:text="@string/tvRechercheLibre"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colBlanc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <EditText
+            android:id="@+id/etRechercheLibre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:ems="10" />
+
+        <ImageButton
+            android:id="@+id/ibRecherche"
+            style="android:imageButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimPetit"
+            android:background="@drawable/loupe_icon"
+            android:onClick="clickRecherche"
+            android:src="@drawable/loupe_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRechercheSpecialite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit"
+        android:background="@color/colBleu"
+        android:text="@string/tvRechercheSpecialite"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colBlanc" />
+
+    <ExpandableListView
+        android:id="@+id/elvRechercheSpecialite"
+        android:layout_width="match_parent"
+        android:layout_height="59dp" >
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/tvRechercheMotCle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit"
+        android:background="@color/colBleu"
+        android:text="@string/tvRechercheMotCle"
+        android:textColor="@color/colBlanc" />
+
+    <ExpandableListView
+        android:id="@+id/elvRechercheMotCle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ExpandableListView>
+
+</LinearLayout>

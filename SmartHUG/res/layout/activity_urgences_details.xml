@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimPetit"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:layout_weight="1"
+            android:text="@string/tvCentreGmoOnex"
+            android:textColor="@color/colNoir" />
+
+        <ImageButton
+            android:id="@+id/ImageButton04"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/dimPetit"
+            android:background="@drawable/call_icon" />
+
+        <ImageButton
+            android:id="@+id/ImageButton05"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/dimPetit"
+            android:background="@drawable/localisation_icon" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <TextView
+            android:id="@+id/tvAdresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:layout_weight="0.40"
+            android:text="@string/tvAdresse"
+            android:textColor="@color/colNoir" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@+id/tvAdresse"
+            android:layout_weight="0.60"
+            android:text="@string/tvAdresseExemple"
+            android:textColor="@color/colNoir" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <TextView
+            android:id="@+id/tvTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:layout_weight="0.40"
+            android:text="@string/tvTelephone"
+            android:textColor="@color/colNoir" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@+id/tvTelephone"
+            android:layout_weight="0.60"
+            android:text="@string/tvTelephoneExemple"
+            android:textColor="@color/colNoir" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <TextView
+            android:id="@+id/tvHoraires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:text="@string/tvHoraires"
+            android:textColor="@color/colNoir" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@+id/tvHoraires"
+            android:layout_weight="1"
+            android:text="@string/tvHorairesExemple"
+            android:textColor="@color/colNoir" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.67"
+        android:src="@drawable/geneve_map" />
+
+</LinearLayout>

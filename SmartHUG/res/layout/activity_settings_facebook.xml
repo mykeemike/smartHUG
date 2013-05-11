@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnFbLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvUrgenceCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colBleu"
+        android:text="@string/stFbLogin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colBlanc" />
+
+    <Button
+        android:id="@+id/btnUrgenceCall"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dimPetit"
+        android:layout_marginTop="@dimen/dimPetit"
+        android:background="@drawable/fb_connect"
+        android:onClick="loginFacebook" />
+
+    <Button
+        android:id="@+id/tvTwitter"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dimPetit"
+        android:layout_marginLeft="@dimen/dimPetit"
+        android:layout_marginTop="@dimen/dimPetit"
+        android:background="@drawable/fb_disconnect"
+        android:onClick="logoutFacebook" />
+
+</LinearLayout>

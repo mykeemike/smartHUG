@@ -1,0 +1,376 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvCom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colBleu"
+                android:paddingBottom="@dimen/dim05"
+                android:paddingLeft="@dimen/dimPetit"
+                android:paddingTop="@dimen/dim05"
+                android:text="@string/tvCom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colBlanc" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnFacebook"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/facebook_icon"
+                            android:onClick="clickFacebook" />
+
+                        <TextView
+                            android:id="@+id/tvFacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvFacebook"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnTwitter"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/twitter_icon"
+                            android:onClick="clickTwitter" />
+
+                        <TextView
+                            android:id="@+id/tvTwitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvTwitter"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnYoutube"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/youtube_icon"
+                            android:onClick="clickYoutube" />
+
+                        <TextView
+                            android:id="@+id/tvYoutube"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvYoutube"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnRSS"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rss_icon"
+                            android:onClick="clickRss" />
+
+                        <TextView
+                            android:id="@+id/tvRSS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvRSS"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colBleu"
+                android:paddingBottom="@dimen/dim05"
+                android:paddingLeft="@dimen/dimPetit"
+                android:paddingTop="@dimen/dim05"
+                android:text="@string/tvService"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colBlanc" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnConsultation"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/consultations_icon"
+                            android:onClick="clickConsultation" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Consultations"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnSang"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/sang_icon" />
+
+                        <TextView
+                            android:id="@+id/tvSang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvSang"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvSante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colBleu"
+                android:paddingBottom="@dimen/dim05"
+                android:paddingLeft="@dimen/dimPetit"
+                android:paddingTop="@dimen/dim05"
+                android:text="@string/tvSante"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colBlanc" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnUrgence"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/urgence_icon"
+                            android:onClick="clickUrgences" />
+
+                        <TextView
+                            android:id="@+id/tvUrgence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvUrgence"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnGuider"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/guider_icon"
+                            android:onClick="clickGuider" />
+
+                        <TextView
+                            android:id="@+id/tvGuider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvGuider"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnOutils"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/outils_icon"
+                            android:onClick="clickOutils" />
+
+                        <TextView
+                            android:id="@+id/tvOutils"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/tvOutils"
+                            android:textColor="@color/colNoir" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvUrgenceVitale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colBleu"
+                    android:paddingBottom="@dimen/dim05"
+                    android:paddingLeft="@dimen/dimPetit"
+                    android:paddingTop="@dimen/dim05"
+                    android:text="@string/tvUrgenceVitale"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colBlanc" />
+
+                <Button
+                    android:id="@+id/btnUrgenceCall"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/emergency_call_icon"
+                    android:onClick="call" />
+
+                <TextView
+                    android:id="@+id/tvUrgenceCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/urgenceCall"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colNoir" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

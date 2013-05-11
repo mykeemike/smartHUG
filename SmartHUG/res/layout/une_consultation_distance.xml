@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimPetit"
+        android:layout_marginTop="@dimen/dimPetit" >
+        
+
+        <TextView
+            android:id="@+id/tvConsultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:layout_weight="1"
+            android:text="@string/tvDermatologie"
+            android:textColor="@color/colNoir"
+            android:textColorHint="@color/colBleu" />
+
+
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colNoir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:text="@string/tvTypeConsultation"
+            android:textColor="@color/colNoir" />
+
+
+
+        <TextView
+            android:id="@+id/tvTypeConsult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvDermatologieExemple"
+            android:textColor="@color/colNoir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+
+        <TextView
+            android:id="@+id/tvAdresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:text="@string/tvAdresse"
+            android:textColor="@color/colNoir" />
+
+
+
+        <TextView
+            android:id="@+id/tvAdrrConsult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAdresseExemple"
+            android:textColor="@color/colNoir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+
+        <TextView
+            android:id="@+id/tvTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:text="@string/tvTelephone"
+            android:textColor="@color/colNoir" />
+
+
+
+        <TextView
+            android:id="@+id/tvTelConsult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tvTelephoneExemple"
+            android:textColor="@color/colNoir" />
+
+    </LinearLayout>
+
+</LinearLayout>

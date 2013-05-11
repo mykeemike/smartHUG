@@ -1,0 +1,362 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colGris"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimPetit"
+        android:layout_marginTop="@dimen/dimPetit" >
+
+        <TextView
+            android:id="@+id/tvUrgencesVitales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimPetit"
+            android:layout_weight="1"
+            android:text="@string/tvUrgencesVitales"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimPetit"
+            android:background="@drawable/call_icon"
+            android:onClick="call" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colBleu"
+        android:paddingBottom="@dimen/dim05"
+        android:paddingLeft="@dimen/dim05"
+        android:paddingTop="@dimen/dim05"
+        android:text="@string/tvHopitaux"
+        android:textColor="@color/colBlanc" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimPetit" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.89"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvCentreGmoOnex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:text="Urgence Hôpital"
+                        android:textColor="@color/colNoir" />
+
+                    <TextView
+                        android:id="@+id/tvTempsAttente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:text="@string/tvTempsAttente"
+                        android:textColor="@color/colNoir" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ImageButton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/call_icon" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/localisation_icon" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/information_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimPetit"
+                android:layout_marginTop="@dimen/dimPetit"
+                android:background="@color/colBleu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimPetit" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.80"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvSang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginRight="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:layout_weight="3.80"
+                        android:text="@string/tvClinCarouge"
+                        android:textColor="@color/colNoir" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_weight="2"
+                        android:text="@string/tvTempsAttente"
+                        android:textColor="@color/colNoir" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ImageButton03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/call_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/localisation_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/information_icon"
+                    android:onClick="clickHopitalDetail" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimPetit"
+                android:layout_marginTop="@dimen/dimPetit"
+                android:background="@color/colBleu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimPetit" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.29"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:layout_weight="1.29"
+                        android:text="@string/tvClinGrangette"
+                        android:textColor="@color/colNoir" />
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_weight="2"
+                        android:text="@string/tvTempsAttente"
+                        android:textColor="@color/colNoir" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ImageButton08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/call_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/localisation_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/information_icon"
+                    android:onClick="clickHopitalDetail" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimPetit"
+                android:layout_marginTop="@dimen/dimPetit"
+                android:background="@color/colBleu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimPetit" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.95"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:layout_weight="4.95"
+                        android:text="@string/tvCentreGmoOnex"
+                        android:textColor="@color/colNoir" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_weight="2"
+                        android:text="@string/tvTempsAttente"
+                        android:textColor="@color/colNoir" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ImageButton06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/call_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/localisation_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/information_icon"
+                    android:onClick="clickHopitalDetail" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimPetit"
+                android:layout_marginTop="@dimen/dimPetit"
+                android:background="@color/colBleu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimPetit" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.20"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimPetit"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_marginTop="@dimen/dimPetit"
+                        android:layout_weight="5.20"
+                        android:text="@string/tvHopitalTour"
+                        android:textColor="@color/colNoir" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimPetit"
+                        android:layout_weight="2"
+                        android:text="@string/tvTempsAttente"
+                        android:textColor="@color/colNoir" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ImageButton04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/call_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/localisation_icon" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimPetit"
+                    android:background="@drawable/information_icon"
+                    android:onClick="clickHopitalDetail" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

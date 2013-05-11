@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartHUG</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings Facebook</string>
+    <string name="tvCom">Les HUG communiquent</string>
+    <string name="tvService">Les HUG à votre service</string>
+    <string name="tvSante">La santé à Genève</string>
+    <string name="tvFacebook">Facebook</string>
+    <string name="tvTwitter">Twitter</string>
+    <string name="tvYoutube">Youtube</string>
+    <string name="tvRSS">RSS</string>
+    <string name="tvConsultation">Service de consultation</string>
+    <string name="tvUrgence">Mes urgences</string>
+    <string name="tvGuider">Me guider</string>
+    <string name="tvOutils">Outils pratiques</string>
+    <string name="tvUrgencesVitales">URGENCES VITALES : 144</string>
+    <string name="tvHopitaux">Hopitaux du canton de Genève</string>
+    <string name="tvCentreGmoOnex">Centre GMO Onex</string>
+    <string name="tvTempsAttente">0h30</string>
+    <string name="tvAdresse">Adresse : </string>
+    <string name="tvTelephone">Téléphone : </string>
+    <string name="tvHoraires">Horaires : </string>
+    <string name="tvAdresseExemple">Route de Chancy 98, 1213 Onex</string>
+    <string name="tvTelephoneExemple">022 757 12 53</string>
+    <string name="tvHorairesExemple">24h sur 24 - 7j sur 7</string>
+    <string name="tvRechercheLibre">Recherche libre :</string>
+    <string name="tvRechercheSpecialite">Recherche selon une spécialité médicale :</string>
+    <string name="tvRechercheMotCle">Recherche selon mot-clé :</string>
+    <string name="tvDermatologie">Centre de dermatologie</string>
+    <string name="tvTypeConsultation">"Type de consultation : "</string>
+    <string name="tvDermatologieExemple">Dermatologie</string>
+    <string name="tvRemarques">"Remarques : "</string>
+    <string name="tvRemarqueExemple">Bla bla</string>
+    <string name="tvUrgenceHUG">Urgences HUG</string>
+    <string name="tvHopitalTour">Hôpital de la Tour</string>
+    <string name="tvClinGrangette">Clinique des Grangettes</string>
+    <string name="tvClinCarouge">Clinique de Carouge</string>
+    <color name="colNoir">#000000</color>
+    <string name="tvWebSite">Site internet :</string>
+    <string name="tvDpt">Département : </string>
+    <string name="tvServ">"Service : "</string>
+    <string name="tvUnite">"Unité : "</string>
+    <string name="app_id">542368772462635</string>
+    <string name="stFbLogin">Facebook Login</string>
+    <string name="stFbLogout">Facebook Logout</string>
+    <string name="stFacebook">Facebook</string>
+    <string name="stTwitter">Twitter</string>
+    <string name="stTwLogin">Twitter Login</string>
+    <string name="stTwLogout">Twitter Logout</string>
+    <string name="stParametres">Parametres</string>
+    <string name="urgenceCall">Appeler le 144</string>
+    <color name="colBlanc">#FFFFFF</color>
+    <color name="colBleuClaire">#6ea8df</color>
+    <color name="colGris">#e4edf8</color>
+    <string name="tvSang">Don du sang</string>
+    <string name="tvUrgenceVitale">Urgence vitale</string>
+    <string name="stYoutube">Youtube</string>
+    <string name="stRSS">Flux RSS</string>
+    <string name="stSettingsTwitter">Twitter Settings</string>
+    <string name="stBlank">&quot;&quot;</string>
+
+</resources>
