@@ -3,7 +3,7 @@
 
     <string name="app_name">SmartHUG</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings Facebook</string>
+    <string name="stFacebookSettings">Facebook Settings</string>
     <string name="tvCom">Les HUG communiquent</string>
     <string name="tvService">Les HUG à votre service</string>
     <string name="tvSante">La santé à Genève</string>
@@ -25,9 +25,9 @@
     <string name="tvAdresseExemple">Route de Chancy 98, 1213 Onex</string>
     <string name="tvTelephoneExemple">022 757 12 53</string>
     <string name="tvHorairesExemple">24h sur 24 - 7j sur 7</string>
-    <string name="tvRechercheLibre">Recherche libre :</string>
-    <string name="tvRechercheSpecialite">Recherche selon une spécialité médicale :</string>
-    <string name="tvRechercheMotCle">Recherche selon mot-clé :</string>
+    <string name="tvRechercheLibre">Recherche libre</string>
+    <string name="tvRechercheSpecialite">Recherche par spécialité médicale</string>
+    <string name="tvRechercheMotCle">Recherche selon mot-clé</string>
     <string name="tvDermatologie">Centre de dermatologie</string>
     <string name="tvTypeConsultation">"Type de consultation : "</string>
     <string name="tvDermatologieExemple">Dermatologie</string>
@@ -58,7 +58,9 @@
     <string name="tvUrgenceVitale">Urgence vitale</string>
     <string name="stYoutube">Youtube</string>
     <string name="stRSS">Flux RSS</string>
-    <string name="stSettingsTwitter">Twitter Settings</string>
+    <string name="stTwitterSettings">Twitter Settings</string>
     <string name="stBlank">&quot;&quot;</string>
+    <string name="stVue"> vue(s)</string>
+    <string name="stGuiderHint">Nom, ville, spécialité...</string>
 
 </resources>

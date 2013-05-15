@@ -7,13 +7,13 @@
  * @version Version 1.0
  * 
  */
-package sante_geneve.presentation;
+package hug_sante_geneve.presentation;
  
-import sante_geneve.traitement.ProxySanteGeneve;
 import noyau.localisation.DetailsConsultationActivity;
 import noyau.traitement.Emplacement;
 import noyau.presentation.R;
 import noyau.presentation.R.layout;
+import hug_sante_geneve.traitement.ProxySanteGeneve;
 import hug_service.traitement.Consultation;
 import android.app.Activity;
 import android.content.Intent;

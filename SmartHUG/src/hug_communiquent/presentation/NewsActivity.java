@@ -10,8 +10,6 @@
 package hug_communiquent.presentation;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,32 +30,21 @@ import twitter4j.auth.RequestToken;
 import twitter4j.conf.ConfigurationBuilder;
 
 import noyau.presentation.R;
-import noyau.presentation.SettingsTwitterActivity;
-import noyau.traitement.GeoTools;
-import noyau.traitement.ProxyNoyau;
 import hug_communiquent.traitement.*;
 
 import android.support.v4.app.ListFragment;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.DataSetObserver;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.*;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
@@ -300,7 +287,7 @@ public class NewsActivity extends TabCompatActivity {
 		private class GetConnection extends AsyncTask <TwitterFragment, Void, JSONArray> {
 
 			TwitterFragment t;
-			
+
 			ProgressDialog dialog;
 			/*protected void onPreExecute() {
 				dialog = new ProgressDialog(getActivity());
@@ -308,13 +295,13 @@ public class NewsActivity extends TabCompatActivity {
 				dialog.setMessage("Retrieving tweets...");
 				dialog.show();
 			}*/
-			
+
 			@Override
 			protected JSONArray doInBackground(TwitterFragment... params) {
 				t=params[0];
 				SharedPreferences settings = getActivity().getSharedPreferences("your_app_prefs", 0);
 				connected = settings.getBoolean("user_logged_in", false);
-				
+
 				if(connected){
 					try {
 						String userKey = settings.getString("user_key", "");
@@ -329,7 +316,7 @@ public class NewsActivity extends TabCompatActivity {
 
 						AccessToken accessToken = new AccessToken(userKey, userSecret);
 						twitter = new TwitterFactory(builder.build()).getInstance(accessToken);
-						
+
 					} catch (Exception e) { 
 						Log.e("TW","Exception:"+e);
 					}
@@ -361,6 +348,7 @@ public class NewsActivity extends TabCompatActivity {
 
 			}*/
 
+			@SuppressWarnings("unchecked")
 			@Override
 			protected JSONArray doInBackground(String... params) {
 				try {
@@ -430,9 +418,6 @@ public class NewsActivity extends TabCompatActivity {
 		private LayoutInflater inflater;
 		private ArrayList<Video> data=new ArrayList<Video>();
 		private AsyncTask <String, Void, String> at;
-		private static class ViewHolder {
-			TextView tvIdVideo, tvTitreVideo, tvDescVideo, tvNbViewVideo, tvTempsVideo, tvDateVideo;
-		} // ViewHolder
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -469,61 +454,6 @@ public class NewsActivity extends TabCompatActivity {
 			super.onDestroy();
 			at.cancel(true);
 		}
-
-
-		private class YoutubeAdapter extends BaseAdapter{
-			private Context context;
-			ArrayList<Video> data = new ArrayList<Video>();
-			YoutubeAdapter(Context context, ArrayList<Video> data) {
-				this.context=context;this.data = data; inflater = LayoutInflater.from(context);
-			}
-
-			@Override
-			public int getCount(){return data.size();}
-
-
-			@Override
-			public Video getItem(int position) {
-				return(data.get(position));
-			}
-
-			@Override
-			public long getItemId(int position) {
-				return(position);
-			}
-
-			@Override
-			public View getView(int position, View convertView, ViewGroup parent) {
-				ViewHolder vH;
-
-				if (convertView==null) {  
-					inflater = LayoutInflater.from(getActivity());
-					convertView = inflater.inflate(R.layout.une_video, null);
-					vH = new ViewHolder();
-					vH.tvIdVideo = (TextView)convertView.findViewById(R.id.tvIdVideo);
-					vH.tvTitreVideo = (TextView)convertView.findViewById(R.id.tvTitreVideo);
-					vH.tvDescVideo = (TextView)convertView.findViewById(R.id.tvDescVideo);
-					vH.tvNbViewVideo = (TextView)convertView.findViewById(R.id.tvNbViewVideo);
-					vH.tvTempsVideo = (TextView)convertView.findViewById(R.id.tvTempsVideo);
-					vH.tvDateVideo = (TextView)convertView.findViewById(R.id.tvDateVideo);
-					convertView.setTag(vH);
-				} else {
-					vH = (ViewHolder)convertView.getTag();
-				}
-
-				Video v = (Video) data.get(position);
-				vH.tvTitreVideo.setText(v.getTitre());
-				vH.tvTempsVideo.setText(v.getTemps());
-				vH.tvNbViewVideo.setText(v.getnbViews());
-				vH.tvDateVideo.setText(v.getDate());
-				vH.tvDescVideo.setText(v.getDescription());
-				vH.tvIdVideo.setText(v.getId());
-				return convertView;
-			}
-
-		}
-
-
 
 		/* Listener de la tâche GetFromUrl: l'objet JSON a été récupéré */
 		public ArrayList<Video> loadJSON (JSONObject json) {
@@ -566,6 +496,12 @@ public class NewsActivity extends TabCompatActivity {
 			} catch(Exception e){
 
 			}
+			try {
+				Thread.sleep(2500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			adapter = new YoutubeAdapter(getActivity(), data);
 			setListAdapter(adapter);
 
@@ -574,7 +510,6 @@ public class NewsActivity extends TabCompatActivity {
 		@Override
 		public void onGetFromUrlError(Exception e) {
 			// TODO Auto-generated method stub
-
 		}
 	}
 
@@ -583,11 +518,8 @@ public class NewsActivity extends TabCompatActivity {
 	 * */
 	public static class RSSFragment extends ListFragment {
 		private FeedAdapter adapter=null;
-		//private RSSFeed feedBlank = null;
-		//private Object[] arObj = new 
 		private LayoutInflater inflater; /* Outil de création d'une vue "layout" à partir de sa description XML */
 		private FeedTask ft = null;
-		private ArrayList<Object> lsRss = new ArrayList<Object>();
 		private static class ViewHolder {
 			TextView tvRssTitle, tvRssContent;
 			RSSItem rssItem;
@@ -609,16 +541,13 @@ public class NewsActivity extends TabCompatActivity {
 			loadUrl(f.getUrl());
 			//        	for(Feed f : alFeeds){
 			//        		loadUrl(f.getUrl());
-			//        	}    
-			ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(getActivity(), R.layout.un_rss, lsRss);
+			//        	}        	
 			/** Creating array adapter to set data in listview */
-		    //adapter = new FeedAdapter(feedBlank);
-			//setListAdapter(adapter);
-			/** Creating array adapter to set data in listview */
-			
+			//ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(), android.R.layout.simple_list_item_1, rss_ars);
+
 			/** Setting the array adapter to the listview */
 
-			setListAdapter(adapter);
+			//setListAdapter(adapter);
 
 
 			return super.onCreateView(inflater, container, savedInstanceState);
@@ -714,9 +643,9 @@ public class NewsActivity extends TabCompatActivity {
 
 			FeedAdapter(RSSFeed feed) {
 				super();
-				this.feed=feed;			
-			}
 
+				this.feed=feed;
+			}
 
 			@Override
 			public int getCount() {

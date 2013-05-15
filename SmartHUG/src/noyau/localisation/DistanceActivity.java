@@ -15,20 +15,15 @@ import hug_service.traitement.Consultation;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.TreeSet;
 
 import noyau.traitement.Emplacement;
 import noyau.traitement.GeoTools;
 
 import org.json.JSONObject;
-
-
 
 import android.location.Address;
 import android.location.Criteria;
@@ -38,18 +33,15 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Looper;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import noyau.presentation.R;
 public class DistanceActivity extends Activity implements LocationListener {
 
 	private GeoTools geoTools;
@@ -61,6 +53,7 @@ public class DistanceActivity extends Activity implements LocationListener {
 	private Geocoder geoCoder;
 	private Location loc;
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -8,19 +8,8 @@
 # Java class files
 *.class
 
-/bin
-/gen
-
-
+# Local configuration file (sdk path, etc)
 local.properties
 
-# Eclipse project files
-.classpath
-.project
-
-/proguard
-
-# Intellij project files
-*.iml
-*.ipr
-*.iws
+/gen
+/bin

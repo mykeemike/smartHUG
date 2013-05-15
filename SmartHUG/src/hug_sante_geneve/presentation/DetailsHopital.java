@@ -7,7 +7,7 @@
  * @version Version 1.0
  * 
  */
-package sante_geneve.presentation;
+package hug_sante_geneve.presentation;
  
 import noyau.presentation.R;
 import noyau.presentation.R.layout;

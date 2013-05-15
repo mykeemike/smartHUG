@@ -54,6 +54,7 @@
             </intent-filter>
         </activity>
         <activity android:name="hug_communiquent.traitement.YoutubeVideo"></activity>
+        <activity android:name="hug_sante_geneve.presentation.GuiderActivity"></activity>
         
     </application>
 

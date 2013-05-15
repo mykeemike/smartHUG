@@ -98,10 +98,10 @@ public class MainActivity extends Activity {
 	  @Override
 	  public boolean onOptionsItemSelected (MenuItem item) {
 		  switch (item.getItemId()) {
-	      case R.id.itSettings: 		
+	      case R.id.itFacebookSettings: 		
 	    	  proxyNoyau.displaySettingsFacebook();
 	    	  return true;
-	      case R.id.itSettingsTwitter:
+	      case R.id.itTwitterSettings:
 	    	  proxyNoyau.displaySettingsTwitter();
 	    	  return true;
 	      default:

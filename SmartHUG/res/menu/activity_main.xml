@@ -1,10 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/itSettings"
+        android:id="@+id/itFacebookSettings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_settings"/>
-    <item android:id="@+id/itSettingsTwitter" android:title="@string/stSettingsTwitter" android:showAsAction="never"></item>
+        android:title="@string/stFacebookSettings"/>
+    <item android:id="@+id/itTwitterSettings" android:title="@string/stTwitterSettings" android:showAsAction="never"></item>
 
 </menu>

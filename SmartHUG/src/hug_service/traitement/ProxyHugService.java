@@ -9,9 +9,9 @@
  */
 package hug_service.traitement;
 
+import hug_sante_geneve.presentation.UrgencesActivity;
 import hug_service.presentation.ConsultationActivity;
 import hug_service.presentation.DetailsRechercheActivity;
-import sante_geneve.presentation.UrgencesActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

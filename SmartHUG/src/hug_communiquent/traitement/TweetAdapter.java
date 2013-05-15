@@ -8,9 +8,7 @@
  * 
  */
 package hug_communiquent.traitement;
-import java.net.URL;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +22,6 @@ import twitter4j.Twitter;
 import twitter4j.TwitterException;
 
 import android.content.*;
-import android.graphics.*;
 import android.os.AsyncTask;
 import android.text.util.Linkify;
 import android.text.util.Linkify.TransformFilter;
@@ -108,7 +105,7 @@ public class TweetAdapter extends BaseAdapter {
 		
 		ViewHolder vH;
 		if (convertView == null) {
-			convertView = inflater.inflate(R.layout.un_joli_tweet, null);
+			convertView = inflater.inflate(R.layout.un_tweet, null);
 			vH = new ViewHolder();
 			vH.tvTweetName = (TextView)convertView.findViewById(R.id.tvTweetName);
 			vH.tvTweetUsername = (TextView)convertView.findViewById(R.id.tvTweetUsername);

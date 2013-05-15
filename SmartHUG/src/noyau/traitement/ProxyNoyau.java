@@ -12,6 +12,9 @@ package noyau.traitement;
 import java.util.ArrayList;
 
 import hug_communiquent.presentation.NewsActivity;
+import hug_sante_geneve.presentation.GuiderActivity;
+import hug_sante_geneve.presentation.UrgencesActivity;
+import hug_sante_geneve.traitement.ProxySanteGeneve;
 import hug_service.presentation.ConsultationActivity;
 import hug_service.traitement.Consultation;
 import hug_service.traitement.ProxyHugService;
@@ -20,8 +23,6 @@ import noyau.localisation.DistanceActivity;
 import noyau.localisation.FullMapActivity;
 import noyau.presentation.SettingsFacebookActivity;
 import noyau.presentation.SettingsTwitterActivity;
-import sante_geneve.presentation.UrgencesActivity;
-import sante_geneve.traitement.ProxySanteGeneve;
 import twitter4j.Twitter;
 import android.app.Activity;
 import android.content.Context;
@@ -78,7 +79,7 @@ public class ProxyNoyau {
 	}
 	
 	public void displayGuider(ArrayList<Consultation> alConsultations){
-		Intent intent = new Intent(context, DistanceActivity.class);
+		Intent intent = new Intent(context, GuiderActivity.class);
 		intent.putExtra("listCons", alConsultations);
 		activity.startActivity(intent);
 	}

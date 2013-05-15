@@ -7,10 +7,10 @@
  * @version Version 1.0
  * 
  */
-package sante_geneve.traitement;
+package hug_sante_geneve.traitement;
 
+import hug_sante_geneve.presentation.UrgencesActivity;
 import hug_service.traitement.Consultation;
-import sante_geneve.presentation.UrgencesActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
